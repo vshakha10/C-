@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     float r = 9;
-    cout << 3.14 * r * r;
+    float area= 3.14 * r * r;
     cout << "area is :" << endl;
-    cout << a << endl;
+    cout << area << endl;
     return 0;
 }
