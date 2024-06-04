@@ -26,6 +26,5 @@ int main()
 {
     area a;
     a.shape(3,3);
- 
     a.hello(4);
 }
