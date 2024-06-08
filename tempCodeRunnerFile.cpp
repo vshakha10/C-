@@ -1,1 +1,1 @@
-cout<<"large value is :"<<large=<<end
+friend void find(large l); 
