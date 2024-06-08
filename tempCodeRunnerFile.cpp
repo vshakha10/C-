@@ -1,1 +1,2 @@
-friend void find(large l); 
+d=c++;
+    // cout<<"volume of D is : " <<d.getvolume()<<endl;
