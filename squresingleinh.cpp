@@ -14,7 +14,7 @@ class squre
         cout<<"\t"<<j<<endl;
     }
     }
-    
+     
 };
 class derived: public squre
 {
