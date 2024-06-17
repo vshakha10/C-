@@ -1,32 +1,29 @@
 #include<iostream>
 using namespace std;
 class Bank
-{ public :
-    int acc_num;
+{ 
+    public :
     string acc_name;
     double balance;
 
    
 
-    Bank(int number ,string name , double bal)
+    Bank(string name , double bal)
     {
-        acc_num= number;
         acc_name = name;
         balance = bal;
     }
     Bank ()
     {
-        cout<<"enter acc_num : "<<endl;
-        cin>>acc_num;
-        cout<<"enter acc_name : "<<endl;
-        cin>>acc_name;
-        cout<<"balance : "<<endl;
-        cin>>balance;
+        acc_name = "vishakha";
+        balance =20000;
     }
 
- void Deposit(double ammount)
+     void Deposit(double ammount)
     {
         if (ammount > 0)
+
+
         {
             balance += ammount;
             cout << "Deposite Ammount : " << ammount << endl;
@@ -53,20 +50,19 @@ class Bank
 
     void Show()
     {
-        cout<<"account number : "<<acc_num<<endl;
-        cout <<"Account Holder name : " << acc_name << endl;
+        cout <<"Account Holder : " << acc_name << endl;
         cout <<"Balance : " << balance << endl;
     }
 };
+
+
 int main()
 {
-    int number;
     string name;
     double ac;
-
-   Bank  account[10];
-   cout<<account.acc_name<<endl;
-   cout<<account.balance;
+    Bank  account;
+    cout<<account.acc_name<<endl;
+    cout<<account.balance;
     int choice;
     do
     {
@@ -76,39 +72,37 @@ int main()
         cout <<"3. Display Balance : "<<endl;
         cout <<"4. Exit : "<<endl;
         cout <<"Enter Your Choice : ";
-
-        
         cin >> choice;
 
         switch (choice)
         {
-        case 1 : 
+            case 1 : 
             double deposit_ammount;
             cout <<"Enter The Deposit Amount : ";
             cin >> deposit_ammount;
             account.Deposit(deposit_ammount);
             break;
 
-        case 2 : 
+            case 2 : 
             double withdraw_ammount;
             cout <<"Enter The WithDraw Amount : ";
             cin >> withdraw_ammount;
             account.Withdraw(withdraw_ammount);
             break;
         
-        case 3 :
+            case 3 :
             account.Show();
             break;
 
-        case 4 :
+            case 4 :
             cout <<"Exiting Program Thank You Visit Again : " ;
             return 0;
 
-        default:
+            default:
             cout <<"You Enter Wrong Choice ! ";
             break;
         }
     }  
-    while(choice < 4);
+        while(choice < 4);
  
 }
