@@ -51,10 +51,9 @@ class Bank
     void Show()
     {
         cout <<"Account Holder : " << acc_name << endl;
-        cout <<"Balance : " << balance << endl;
+        cout <<"Balance : " << balance << endl;                                                                                                                                 
     }
 };
-
 
 int main()
 {
